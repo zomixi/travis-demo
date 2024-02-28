@@ -26,9 +26,9 @@ jobs:
     - name: Print working directory
       run: ls ${{ env.GITHUB_WORKSPACE }}
       
-    - name: Upload Report
-      uses: actions/upload-artifact@v4.3.1
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v3
       with:
-        name: apifox-reports
-        path: ${{ env.GITHUB_WORKSPACE }}
+        name: apifox-report-2024-02-28-18-25-27-448-0.html
+        path: ${{ env.GITHUB_WORKSPACE }}/apifox-reports
           
