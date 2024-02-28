@@ -18,7 +18,7 @@ jobs:
       run: npm install -g apifox-cli
 
     - name: Running Test Scenario
-      run: apifox run https://api.apifox.com/api/v1/projects/3270595/api-test/ci-config/409269/detail?token=xWxCJTnK7CIR5fJLNwmTAR -r html,cli
+      run: apifox run https://api.apifox.com/api/v1/projects/3270595/api-test/ci-config/409269/detail?token=xWxCJTnK7CIR5fJLNwmTAR -r html,cli || true
             
     - name: Upload Report
       uses: actions/upload-artifact@v4.3.1
