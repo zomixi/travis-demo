@@ -29,6 +29,6 @@ jobs:
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: apifox-report-2024-02-28-18-25-27-448-0.html
-        path: ${{ env.GITHUB_WORKSPACE }}/apifox-reports
+        name: reports
+        path: ${{ github.workspace }}/apifox-reports/**/*
           
